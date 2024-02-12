@@ -10,7 +10,7 @@ const CoverBody = () => {
             const response=await fetch(`${BASE_URL}?q=${book}&key=${API_KEY}`);
             const data= await response.json();
             setBookData(data.items);
-            console.log(Bookdata);
+            console.log(data);
         } catch (error) {
             console.log("Error is Occurred",error)
         }
