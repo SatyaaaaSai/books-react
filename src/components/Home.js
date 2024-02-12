@@ -1,7 +1,16 @@
+import Header from "./Header";
+import CoverBody from "./CoverBody";
+import "./App.css";
 const Home=()=>{
     return (
         <div>
-            <h2>Hello</h2>
+            <div>
+                <Header/>
+            </div>
+            <div>
+                <CoverBody/>
+            </div>
+           
         </div>
     )
 }
