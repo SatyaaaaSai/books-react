@@ -1,24 +1,23 @@
-import { useEffect, useState } from "react";
-import { BASE_URL,API_KEY} from "../utils/constants";
+import { useState } from "react";
+import { BASE_URL, API_KEY } from "../utils/constants";
 
 const CoverBody = () => {
-    const book="Atomic habits";
-    const[Bookdata,setBookData]=useState([]);
+  const book = "Atomic habits";
+  const [Bookdata, setBookData] = useState([]);
 
-    const fetchData = async ()=> {
-        try{
-            const response=await fetch(`${BASE_URL}?q=${book}&key=${API_KEY}`);
-            const data= await response.json();
-            setBookData(data.items);
-            console.log(data);
-        } catch (error) {
-            console.log("Error is Occurred",error)
-        }
+  const fetchData = async () => {
+    try {
+      const response = await fetch(`${BASE_URL}?q=${book}&key=${API_KEY}`);
+      const data = await response.json();
+      setBookData(data.items);
+      console.log(data);
+    } catch (error) {
+      console.log("Error is Occurred", error);
     }
-    
-    useEffect(()=>{
-        fetchData();
-    });
+  };
+
+  // fetchData();
+
 
   return (
     <div className="image-container">
@@ -29,13 +28,17 @@ const CoverBody = () => {
           civilization because it takes the free raw material of the mind and
           builds castles of possibilities.”
         </p>
-   
-      <div>
-        <form>
-            <input type="textbox" className="input-box" placeholder="Enter Your Book Here..."/>
+
+        <div>
+          <form>
+            <input
+              type="textbox"
+              className="input-box"
+              placeholder="Enter Your Book Here..."
+            />
             <button>Submit</button>
-        </form>
-      </div>
+          </form>
+        </div>
       </div>
     </div>
   );

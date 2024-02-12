@@ -4,5 +4,9 @@ export const img =
 export const cover_img =
   "https://github.com/ijayhub/Book-Web-App/blob/main/src/img/cover.jpg";
 
-export const API_KEY = "AIzaSyCcXpg8WdE5wb0LM26KoSeBNnF93rFog8Y";
+export const API_KEY = "AIzaSyA6wrr7lEAIBBnfE_lUqUs3vQbWAjyiQ-8";
 export const BASE_URL = "https://www.googleapis.com/books/v1/volumes";
+
+export const book = "best books";
+
+//AIzaSyCcXpg8WdE5wb0LM26KoSeBNnF93rFog8Y

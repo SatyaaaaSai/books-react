@@ -1,62 +1,92 @@
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-.img-container img{
-    width: 180px;
-    height: 180px;
-    margin-left: 12px;
+.img-container img {
+  width: 180px;
+  height: 180px;
+  margin-left: 12px;
 }
 
-.main-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.names-indexing ul{
-    list-style-type: none;
-    display: flex;
-     justify-content: space-evenly; 
+.names-indexing ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
 }
 .names-indexing ul li {
-    margin-right: 150px;
-    padding: 2px;
+  margin-right: 150px;
+  padding: 2px;
 }
 
 .names-indexing ul li:hover {
-    cursor: pointer;
-    font-style: italic;
+  cursor: pointer;
+  font-style: italic;
 }
 
 .cover-img {
-    width: 100%;
-    height: 20%;
-    /* object-fit: cover; */
+  width: 100%;
+  height: 20%;
+  /* object-fit: cover; */
 }
 
 .image-container {
-    background-image: url("../img/cover.jpg");
-    background-repeat: no-repeat;
-    background-position: var(1px);
-    object-fit: fill;
-    height: 480px;
-    width: 100%;
+  background-image: url("../img/cover.jpg");
+  background-repeat: no-repeat;
+  background-position: var(1px);
+  object-fit: fill;
+  height: 480px;
+  width: 100%;
 }
 
 .background-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 160px;
-    color: #fff
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 160px;
+  color: #fff;
 }
 
 .heading-text {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* ---BOOK-CONTAINER--- */
+
+.mainbook-conatainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 12px;
+  padding: 20px;
+}
+
+.book-container {
+  width: 355px;
+  height: 400px;
+  background-color: #ebe9e9;
+  margin-bottom: 8px;
+  /* padding: 18px; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 12px;
+}
+.bimg-container img {
+  width: 100px;
+  height: 100px;
+  margin-left: 48px;
+  margin-top: 12px;
+}
+.inbook-container {
+  padding-left: 28px;
 }
