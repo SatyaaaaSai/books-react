@@ -41,4 +41,22 @@
 
 .image-container {
     background-image: url("../img/cover.jpg");
+    background-repeat: no-repeat;
+    background-position: var(1px);
+    object-fit: fill;
+    height: 480px;
+    width: 100%;
+}
+
+.background-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 160px;
+    color: #fff
+}
+
+.heading-text {
+    margin-bottom: 1rem;
 }
